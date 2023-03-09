@@ -55,7 +55,10 @@
 
 # Social widget
 - id: social_title
-  translation: "Social"
+  translation: "Contact"
+
+- id: social_phone
+  translation: "Phone"
 
 # Tags List widget
 - id: tags_title

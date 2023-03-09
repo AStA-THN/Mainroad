@@ -2,11 +2,36 @@
 <div class="widget-social widget">
 	<h4 class="widget-social__title widget__title">{{ T "social_title" }}</h4>
 	<div class="widget-social__content widget__content">
-		{{- with .Site.Params.widgets.social.facebook }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/{{ . }}" target="_blank">
-				{{ partial "svg/facebook.svg" (dict "class" "widget-social__link-icon") }}
-				<span>Facebook</span>
+			<div class="widget-social__custom">
+				AStA der TH-Nürnberg<br>
+				Raum KA.010<br>
+				Keßlerplatz 12<br>
+				90489 Nürnberg<br>
+				<br>
+				<h5>Bürozeiten</h5>
+				<ul>
+					<li>Montags   10:00 – 14:00 Uhr</li>
+					<li>Mittwochs 10:00 – 14:00 Uhr</li>
+					<li>Freitags  08:30 – 10:30 Uhr</li>
+					<li>Nach Vereinbarung per E-Mail.</li>
+				</ul>
+				<br>
+			</div>
+		</div>
+		{{- with .Site.Params.widgets.social.phone }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="{{ T "social_phone" }}" href="tel:{{ replace . " " "" }}">
+				{{ partial "svg/phone.svg" (dict "class" "widget-social__link-icon") }}
+				<span>{{ . }}</span>
+			</a>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.email }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="E-Mail" href="mailto:{{ . }}">
+				{{ partial "svg/email.svg" (dict "class" "widget-social__link-icon") }}
+				<span>{{ . }}</span>
 			</a>
 		</div>
 		{{- end }}
@@ -23,6 +48,14 @@
 			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer" href="https://www.instagram.com/{{ . }}" target="_blank">
 				{{ partial "svg/instagram.svg" (dict "class" "widget-social__link-icon") }}
 				<span>Instagram</span>
+			</a>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.facebook }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/{{ . }}" target="_blank">
+				{{ partial "svg/facebook.svg" (dict "class" "widget-social__link-icon") }}
+				<span>Facebook</span>
 			</a>
 		</div>
 		{{- end }}
@@ -63,14 +96,6 @@
 			<a class="widget-social__link widget__link btn" title="Bitbucket" rel="noopener noreferrer" href="https://bitbucket.org/{{ . }}" target="_blank">
 				{{ partial "svg/bitbucket.svg" (dict "class" "widget-social__link-icon") }}
 				<span>Bitbucket</span>
-			</a>
-		</div>
-		{{- end }}
-		{{- with .Site.Params.widgets.social.email }}
-		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Email" href="mailto:{{ . }}">
-				{{ partial "svg/email.svg" (dict "class" "widget-social__link-icon") }}
-				<span>{{ . }}</span>
 			</a>
 		</div>
 		{{- end }}

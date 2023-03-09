@@ -1142,6 +1142,10 @@ textarea {
 	fill: #fff;
 }
 
+.widget-social__custom h5 {
+	margin: 0 0 0.3rem;
+}
+
 /* Tags Widget */
 .widget-taglist__link {
 	display: inline-block;

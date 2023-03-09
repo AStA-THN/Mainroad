@@ -55,7 +55,11 @@
 
 # Social widget
 - id: social_title
-  translation: "Soziale Netzwerke"
+  translation: "Kontakt"
+
+- id: social_phone
+  translation: "Telefon"
+
 
 # Tags List widget
 - id: tags_title
