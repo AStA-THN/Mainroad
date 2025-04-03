@@ -10,7 +10,11 @@
 				90489 Nürnberg<br>
 				<br>
 				<h5>Bürozeiten</h5>
-				<p>Im Wintersemester 2024/2025 gibt es keine festen Bürozeiten. Termine können per Mail ausgemacht werden, alternativ ist das Büro die meiste Zeit besetzt.</p>
+				<ul>
+					<li>Montag: 11:00 - 14:00 Uhr</li>
+					<li>Mittwoch: 11:00 - 17:00 Uhr</li>
+					<li>Nach Vereinbarung per E-Mail.</li>
+				</ul>
 				<h5>Sitzungstermine</h5>
 				<ul>
 					<li>Sitzungstermine sind <a class="meta" href="/posts/asta-sitzungen-wise-24/">hier</a> zu finden.</li>
@@ -20,7 +24,7 @@
 		</div>
 		{{- with .Site.Params.widgets.social.phone }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="{{ T "social_phone" }}" href="tel:{{ replace . " " "" }}">
+			<a class="widget-social__link widget__link btn" title="{{ T " social_phone" }}" href="tel:{{ replace . " " "" }}">
 				{{ partial "svg/phone.svg" (dict "class" "widget-social__link-icon") }}
 				<span>{{ . }}</span>
 			</a>
@@ -36,7 +40,8 @@
 		{{- end }}
 		{{- with .Site.Params.widgets.social.twitter }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/{{ . }}" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer"
+				href="https://twitter.com/{{ . }}" target="_blank">
 				{{ partial "svg/twitter.svg" (dict "class" "widget-social__link-icon") }}
 				<span>Twitter</span>
 			</a>
@@ -44,7 +49,8 @@
 		{{- end }}
 		{{- with .Site.Params.widgets.social.instagram }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer" href="https://www.instagram.com/{{ . }}" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer"
+				href="https://www.instagram.com/{{ . }}" target="_blank">
 				{{ partial "svg/instagram.svg" (dict "class" "widget-social__link-icon") }}
 				<span>Instagram</span>
 			</a>
@@ -52,7 +58,8 @@
 		{{- end }}
 		{{- with .Site.Params.widgets.social.facebook }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/{{ . }}" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer"
+				href="https://facebook.com/{{ . }}" target="_blank">
 				{{ partial "svg/facebook.svg" (dict "class" "widget-social__link-icon") }}
 				<span>Facebook</span>
 			</a>
@@ -60,7 +67,8 @@
 		{{- end }}
 		{{- with .Site.Params.widgets.social.linkedin }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="LinkedIn" rel="noopener noreferrer" href="https://linkedin.com/in/{{ . }}" target="_blank">
+			<a class="widget-social__link widget__link btn" title="LinkedIn" rel="noopener noreferrer"
+				href="https://linkedin.com/in/{{ . }}" target="_blank">
 				{{ partial "svg/linkedin.svg" (dict "class" "widget-social__link-icon") }}
 				<span>LinkedIn</span>
 			</a>
@@ -68,7 +76,8 @@
 		{{- end }}
 		{{- with .Site.Params.widgets.social.telegram }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer" href="https://t.me/{{ . }}" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer"
+				href="https://t.me/{{ . }}" target="_blank">
 				{{ partial "svg/telegram.svg" (dict "class" "widget-social__link-icon") }}
 				<span>Telegram</span>
 			</a>
@@ -76,7 +85,8 @@
 		{{- end }}
 		{{- with .Site.Params.widgets.social.github }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/{{ . }}" target="_blank">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer"
+				href="https://github.com/{{ . }}" target="_blank">
 				{{ partial "svg/github.svg" (dict "class" "widget-social__link-icon") }}
 				<span>GitHub</span>
 			</a>
@@ -84,7 +94,8 @@
 		{{- end }}
 		{{- with .Site.Params.widgets.social.gitlab }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="GitLab" rel="noopener noreferrer" href="https://gitlab.com/{{ . }}" target="_blank">
+			<a class="widget-social__link widget__link btn" title="GitLab" rel="noopener noreferrer"
+				href="https://gitlab.com/{{ . }}" target="_blank">
 				{{ partial "svg/gitlab.svg" (dict "class" "widget-social__link-icon") }}
 				<span>GitLab</span>
 			</a>
@@ -92,7 +103,8 @@
 		{{- end }}
 		{{- with .Site.Params.widgets.social.bitbucket }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Bitbucket" rel="noopener noreferrer" href="https://bitbucket.org/{{ . }}" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Bitbucket" rel="noopener noreferrer"
+				href="https://bitbucket.org/{{ . }}" target="_blank">
 				{{ partial "svg/bitbucket.svg" (dict "class" "widget-social__link-icon") }}
 				<span>Bitbucket</span>
 			</a>
@@ -101,9 +113,10 @@
 
 		{{ range .Site.Params.widgets.social.custom }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="{{ .title }}" {{ with .rel | default "noopener noreferrer" }} rel="{{ . }}"{{ end }} href="{{ .url }}" target="_blank">
+			<a class="widget-social__link widget__link btn" title="{{ .title }}" {{ with .rel | default "noopener noreferrer"
+				}} rel="{{ . }}" {{ end }} href="{{ .url }}" target="_blank">
 				{{- if .icon }}
-					{{ partial .icon (dict "class" "widget-social__link-icon") }}
+				{{ partial .icon (dict "class" "widget-social__link-icon") }}
 				{{- end }}
 				<span>{{ .title }}</span>
 			</a>
